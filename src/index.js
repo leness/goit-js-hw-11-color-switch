@@ -20,7 +20,7 @@ let timerId;
 
 function startClick() {
   timerId = setInterval(() => {
-    refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)]
+    refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)]
   }, 1000);
   refs.btnStart.disabled = true;
 };
